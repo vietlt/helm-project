@@ -7,6 +7,8 @@ Provision the infrastructure with Terraform
 *The whole provisioning process may take more than 20 minutes.
 
 
+
+
 Confirm terraform with EKS cluster 2 worker nodes on the public subnet
  ![image](https://user-images.githubusercontent.com/95838672/187014668-43340583-f0a1-4c5f-b209-60c1a6383e57.png)
 Package ChatApp application to a Docker image and upload to the container registry ECR 
@@ -20,6 +22,8 @@ Change dir into folder main and run ‘docker build -t chatapp .’
  ![image](https://user-images.githubusercontent.com/95838672/187014721-965bc9a0-3ca2-4dec-9f75-72f89254634d.png)
 Confirm the image had been pushed to the ECR repository.
  ![image](https://user-images.githubusercontent.com/95838672/187014724-28c5f4b2-8166-4705-bfa0-0126b82d7fcd.png)
+
+
 
 
 Create chart repository
@@ -39,9 +43,13 @@ Deploying the application using Helm chart
  ![image](https://user-images.githubusercontent.com/95838672/187014757-eedf8c80-1b4e-4719-9880-6a819f306aab.png)
 Confirm chart has been deploy
  ![image](https://user-images.githubusercontent.com/95838672/187014758-cd88cfc0-8333-469d-82dd-8981bd83197e.png)
-‘helm install chatapp chatapp/’
+Run ‘helm install chatapp chatapp/’
  ![image](https://user-images.githubusercontent.com/95838672/187014760-89507027-0466-4c51-8ae4-13bc452aa364.png)
  ![image](https://user-images.githubusercontent.com/95838672/187014766-c5198562-9bb5-4bd4-b9e9-a40a96d65947.png)
+
+
+
+
 Showing the application works
 Get load balancer
  ![image](https://user-images.githubusercontent.com/95838672/187014773-948d7d5a-2c31-4f6e-854d-542435115e62.png)
